@@ -1,0 +1,9 @@
+FROM python:3.14.4-slim
+
+WORKDIR /app
+
+ENV PYTHONUNBUFFERED=1
+
+COPY CRUD_POO_V1.py .
+
+CMD ["python",  "CRUD_POO_V1.py"]
